@@ -5,7 +5,7 @@ import requests
 import os
 
 t = Tk()
-t.title('Super Inspector')
+t.title('Inspector by ComputerWare')
 t.geometry('802x430')
 scrollbar = Scrollbar(t)
 scrollbar.pack(side = RIGHT, fill = Y)
@@ -13,13 +13,13 @@ menubar = Menu(t)
 
 #Functions
 def new_window():
-    os.system("./inspector")
+    os.system("inspector")
 
 def close_window():
     t.destroy()
     
 def about():
-    tkinter.messagebox.showinfo("About","Super Inspector: 2.0, Developer email: evansergi851@outlook.com")
+    tkinter.messagebox.showinfo("About","Inspector: 2.1.1, Developer email: evansergi85@gmail.com")
 
 def inspect_url():
     code = url.get(1.0, "end-1c")
@@ -33,7 +33,7 @@ def inspect_url():
     scrollbar.config(command = inputtxt.yview)
 
 def online_help():
-    webbrowser.open('https://sites.google.com/view/superinspector')
+    webbrowser.open('https://github.com/ComputerWare/Inspector/')
 # Files Menu Bar
 file = Menu(menubar, tearoff = 0)
 menubar.add_cascade(label ='File', menu = file)
